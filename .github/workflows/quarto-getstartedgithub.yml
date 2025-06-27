@@ -20,11 +20,11 @@ jobs:
 
       - name: Render Quarto Book
         run: |
-          cd your-book
+          cd books/github
           quarto render
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: github/_book
+          publish_dir: books/github/_book
