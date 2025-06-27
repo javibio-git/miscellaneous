@@ -6,4 +6,4 @@ book:
   author: "Javier Carpinteyro Ponce"
   chapters:
     - index.qmd
-    - getstarted_localrepo.qmd
+    - github/getstarted_localrepo.qmd
