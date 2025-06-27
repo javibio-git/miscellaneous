@@ -6,6 +6,10 @@ book:
   author: "Javier Carpinteyro Ponce"
   chapters:
     - index.qmd
-    - part: "Topics"
+    - part: "All about GitHub"
       chapters:
         - github/getstarted_localrepo.qmd
+
+format:
+  html:
+    number-sections: false
