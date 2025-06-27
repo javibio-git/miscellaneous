@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Javi’s personal collection of tutorials and scripts",
     "section": "",
-    "text": "This is a tutorial on how to create a local GitHub repository, and how to push it to GitHub.com",
+    "text": "This is my personal collection of tutorials and scripts I have created along my scientific journey. Books are classified by topic and each topic has a collection of books that might also reference scripts you could download.\nThe current collection has the following topics:\n\nAll about GitHub:\n\nGet started with GitHub",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>A collection of tutorials and scripts</span>"
     ]
