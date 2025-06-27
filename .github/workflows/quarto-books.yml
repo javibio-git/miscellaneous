@@ -20,7 +20,7 @@ jobs:
 
       - name: Render Quarto Book
         run: |
-          cd books/github
+          cd books
           quarto render
 
       - name: Publish to GitHub Pages
