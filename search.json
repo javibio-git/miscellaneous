@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "How to get started with GitHub",
+    "section": "",
+    "text": "This is a tutorial on how to create a local GitHub repository, and how to push it to GitHub.com",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How to get started with GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "getstarted_localrepo.html",
+    "href": "getstarted_localrepo.html",
+    "title": "2  How to",
+    "section": "",
+    "text": "This is a tutorial on how to create a local GitHub repository, and how to push it to GitHub.com\n\n2.0.1 Step 1: Create a directory for your local repository and git init\nmkdir my-project\ncd my-project\ngit init\n\n\n2.0.2 Step 2: Add your first files and commit\necho \"# My Project\" &gt; README.md  # or add your actual files\ngit add .\ngit commit -m \"Initial commit\"\n\n\n2.0.3 Step 3: Create a new repository on github.com\nGo to https://github.com/new and:\n\nEnter a repository name (e.g., my-project)\nChoose Public or Private\nClick Create repository\n\n👉 Don’t initialize it with a README, .gitignore, or license (you already did locally).\n\n\n2.0.4 Step 4: Add the remote and push\ngit remote add origin git@github.com:username/my-project.git\ngit push -u origin main\nIf you need to set up your ssh key, you might need to do the following first:\n\n\n2.0.5 Optional\n\nCheck for existing SSH keys\nls -al ~/.ssh\nGenerate a new SSH key if needed\nssh-keygen -t ed25519 -C \"your_email@example.com\"\n\n# Use your GitHub email address. If your system doesn't support ed25519, fall back to:\nssh-keygen -t rsa -b 4096 -C \"your_email@example.com\"\n\nPress Enter to accept the default file location (~/.ssh/id_ed25519)\nSet a passphrase (optional but recommended)\n\nStart the SSH agent and add your key\n# Start the agent\neval \"$(ssh-agent -s)\"\n\n# Add your SSH private key\nssh-add ~/.ssh/id_ed25519\nCopy your SSH public key\ncat ~/.ssh/id_ed25519.pub\nAdd the SSH key to GitHub\n\nGo to https://github.com/settings/keys\nClick New SSH key\nTitle it (e.g., “My MacBook Pro”)\nPaste the key and click Add SSH key\n\nTest the connection\nssh -T git@github.com\n\n\n\n2.0.6 How How to switch from HTTPS remote URL to SSH\n\nStep 1: Check your current remote URL\ngit remote -v\n\nyou should see something like:\norigin  https://github.com/username/repo.git (fetch)\norigin  https://github.com/username/repo.git (push)\n\nStep 2: Switch to SSH\ngit remote set-url origin git@github.com:username/repo.git",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to</span>"
+    ]
+  }
+]
