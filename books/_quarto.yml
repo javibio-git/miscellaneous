@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Javi's personal collection of tutorials and scripts"
+  title: "A collection of tutorials and scripts"
   author: "Javier Carpinteyro Ponce"
   chapters:
     - index.qmd
