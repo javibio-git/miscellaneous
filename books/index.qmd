@@ -10,4 +10,9 @@ toc: true
 self-contained: true
 ---
 
-This is a tutorial on how to create a local GitHub repository, and how to push it to GitHub.com
+This is my personal collection of tutorials and scripts I have created along my scientific journey. Books are classified by topic and each topic has a collection of books that might also reference scripts you could download.
+
+The current collection has the following topics:
+
+-   All about GitHub:
+    -   [Get started with GitHub](github/getstarted_localrepo.qmd)
