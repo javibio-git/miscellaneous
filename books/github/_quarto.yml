@@ -1,0 +1,9 @@
+project:
+  type: book
+
+book:
+  title: "How to get started with GitHub"
+  author: "Javier Carpinteyro Ponce"
+  chapters:
+    - index.qmd
+    - getstarted_localrepo.qmd
