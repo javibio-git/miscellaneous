@@ -1,0 +1,14 @@
+---
+title: "How to get started with GitHub"
+author: "Javier Carpinteyro Ponce"
+format: html
+editor: visual
+code-annotations: hover
+date: 05/09/2025
+editor_options: 
+  chunk_output_type: console
+toc: true
+self-contained: true
+---
+
+This is a tutorial on how to create a local GitHub repository, and how to push it to GitHub.com
