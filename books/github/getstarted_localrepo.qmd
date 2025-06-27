@@ -1,6 +1,5 @@
 ---
-title: "How to "
-author: "Javier Carpinteyro Ponce"
+title: "How to get started with GitHub"
 format: html
 editor: visual
 code-annotations: hover

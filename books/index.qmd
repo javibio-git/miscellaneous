@@ -1,8 +1,7 @@
 ---
-title: "How to get started with GitHub"
+title: "A collection of tutorials and scripts"
 author: "Javier Carpinteyro Ponce"
 format: html
-editor: visual
 code-annotations: hover
 date: 05/09/2025
 editor_options: 

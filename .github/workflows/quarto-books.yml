@@ -1,10 +1,10 @@
-name: Build and Deploy quarto-getstartedgithub
+name: Publish my collection of tutorials and scripts to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
-      - 'books/github/**'
+      - 'books/**'
       - '.github/workflows/quarto-getstartedgithub.yml'
 
 jobs:
@@ -27,4 +27,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: books/github/_book
+          publish_dir: books/_book
