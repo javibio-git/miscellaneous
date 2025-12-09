@@ -16,3 +16,5 @@ The current collection has the following topics:
 
 -   All about GitHub:
     -   [Get started with GitHub](github/getstarted_localrepo.qmd)
+-   All about micromamba:
+    -   [Get started with micromamba](micromamba/getstarted_HPC.qmd)

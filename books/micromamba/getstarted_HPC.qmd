@@ -1,0 +1,56 @@
+---
+title: "How to get started with micromamba on HPC"
+author: "Javier Carpinteyro Ponce"
+format: html
+editor: visual
+code-annotations: hover
+date: 12/09/2025
+editor_options: 
+  chunk_output_type: console
+toc: true
+self-contained: true
+---
+
+This guide explains how to install micromamba, recreate a shared environment, and use it on a Slurm-based HPC cluster
+
+
+## 1. Install Micromamba
+
+Micromamba is a lightweight, standalone conda package manager—ideal for HPC systems.
+
+### Quick Install
+
+```bash
+
+# create a directory for micromamba
+mkdir -p ~/micromamba # change this path as needed
+
+# Download and install micromamba to ~/micromamba
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj -C ~/micromamba
+
+# Add installation to your shell config (~/.bashrc)
+./micromamba/bin/micromamba shell init -s bash -r ~/micromamba  # this writes to your .bashrc file
+# then restart your terminal!
+```
+
+### Verify Installation
+
+```bash
+micromamba --version
+```
+
+---
+
+## 2. Install the Shared Environment
+
+Once you have the `environment.yml` file from your collaborator:
+
+```bash
+# Create environment from the YAML file
+micromamba create -f environment.yml
+
+# Or specify a custom environment name
+micromamba create -n my_env_name -f environment.yml
+```
+
+This will download and install all packages specified in the environment file.

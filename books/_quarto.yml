@@ -9,6 +9,7 @@ book:
     - part: "All about GitHub"
       chapters:
         - github/getstarted_localrepo.qmd
+        - micromamba/getstarted_HPC.qmd
 
 format:
   html:
