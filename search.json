@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "A collection of tutorials and scripts",
     "section": "",
-    "text": "This is my personal collection of tutorials and scripts I have created along my scientific journey. Books are classified by topic and each topic has a collection of books that might also reference scripts you could download.\nThe current collection has the following topics:\n\nAll about GitHub:\n\nGet started with GitHub",
+    "text": "This is my personal collection of tutorials and scripts I have created along my scientific journey. Books are classified by topic and each topic has a collection of books that might also reference scripts you could download.\nThe current collection has the following topics:\n\nAll about GitHub:\n\nGet started with GitHub\n\nAll about micromamba:\n\nGet started with micromamba",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>A collection of tutorials and scripts</span>"
     ]
@@ -18,6 +18,39 @@
     "crumbs": [
       "All about GitHub",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to get started with GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "micromamba/getstarted_HPC.html",
+    "href": "micromamba/getstarted_HPC.html",
+    "title": "How to get started with micromamba on HPC",
+    "section": "",
+    "text": "1. Install Micromamba\nThis guide explains how to install micromamba, recreate a shared environment, and use it on a Slurm-based HPC cluster\nMicromamba is a lightweight, standalone conda package manager—ideal for HPC systems.",
+    "crumbs": [
+      "All about GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to get started with micromamba on HPC</span>"
+    ]
+  },
+  {
+    "objectID": "micromamba/getstarted_HPC.html#install-micromamba",
+    "href": "micromamba/getstarted_HPC.html#install-micromamba",
+    "title": "How to get started with micromamba on HPC",
+    "section": "",
+    "text": "Quick Install\n\n# create a directory for micromamba\nmkdir -p ~/micromamba # change this path as needed\n\n# Download and install micromamba to ~/micromamba\ncurl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj -C ~/micromamba\n\n# Add installation to your shell config (~/.bashrc)\n./micromamba/bin/micromamba shell init -s bash -r ~/micromamba  # this writes to your .bashrc file\n# then restart your terminal!\n\n\nVerify Installation\nmicromamba --version",
+    "crumbs": [
+      "All about GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to get started with micromamba on HPC</span>"
+    ]
+  },
+  {
+    "objectID": "micromamba/getstarted_HPC.html#install-the-shared-environment",
+    "href": "micromamba/getstarted_HPC.html#install-the-shared-environment",
+    "title": "How to get started with micromamba on HPC",
+    "section": "2. Install the Shared Environment",
+    "text": "2. Install the Shared Environment\nOnce you have the environment.yml file from your collaborator:\n# Create environment from the YAML file\nmicromamba create -f environment.yml\n\n# Or specify a custom environment name\nmicromamba create -n my_env_name -f environment.yml\nThis will download and install all packages specified in the environment file.",
+    "crumbs": [
+      "All about GitHub",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to get started with micromamba on HPC</span>"
     ]
   }
 ]
