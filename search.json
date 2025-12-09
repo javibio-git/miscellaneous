@@ -47,7 +47,18 @@
     "href": "micromamba/getstarted_HPC.html#install-the-shared-environment",
     "title": "How to get started with micromamba on HPC",
     "section": "2. Install the Shared Environment",
-    "text": "2. Install the Shared Environment\nOnce you have the environment.yml file from your collaborator:\n# Create environment from the YAML file\nmicromamba create -f environment.yml\n\n# Or specify a custom environment name\nmicromamba create -n my_env_name -f environment.yml\nThis will download and install all packages specified in the environment file.",
+    "text": "2. Install the Shared Environment\nOnce you have the environment.yml file from your collaborator:\n# Create environment from the YAML file\nmicromamba create -f environment.yml\n\n# Or specify a custom environment name\nmicromamba create -n my_env_name -f environment.yml",
+    "crumbs": [
+      "All about micromamba",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to get started with micromamba on HPC</span>"
+    ]
+  },
+  {
+    "objectID": "micromamba/getstarted_HPC.html#verify-the-enviroment-installation",
+    "href": "micromamba/getstarted_HPC.html#verify-the-enviroment-installation",
+    "title": "How to get started with micromamba on HPC",
+    "section": "3. Verify the enviroment installation",
+    "text": "3. Verify the enviroment installation\nOnce the installation is complete, you can verify it by activating the environment and checking the installed packages:\nmicromamba activate my_env_name  # replace with your environment name\nThis will download and install all packages specified in the environment file.",
     "crumbs": [
       "All about micromamba",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>How to get started with micromamba on HPC</span>"
