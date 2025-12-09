@@ -53,4 +53,12 @@ micromamba create -f environment.yml
 micromamba create -n my_env_name -f environment.yml
 ```
 
+## 3. Verify the enviroment installation
+
+Once the installation is complete, you can verify it by activating the environment and checking the installed packages:
+
+```bash
+micromamba activate my_env_name  # replace with your environment name
+```
+
 This will download and install all packages specified in the environment file.
